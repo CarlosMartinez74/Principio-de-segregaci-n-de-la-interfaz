@@ -1,10 +1,14 @@
-interface BasicCar {
-  accelerate: () => void;
-  brake: () => void;
-  startEngine: () => void;
+// Interfaz básica para autos comunes
+public interface IBasicCar
+{
+    void Accelerate();
+    void Brake();
+    void StartEngine();
 }
 
-interface TeslaCar extends BasicCar {
-  autoPilot: () => void;
-  ludicrousSpeed: () => void;
+// Interfaz extendida para autos tipo Tesla (agrega características adicionales)
+public interface ITeslaCar : IBasicCar
+{
+    void AutoPilot();
+    void LudicrousSpeed();
 }
