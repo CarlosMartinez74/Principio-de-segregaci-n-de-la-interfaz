@@ -1,35 +1,47 @@
-class Mustang implements BasicCar {
-  accelerate() {
-    console.log("Speeding up...");
-  }
+// Implementación de un coche tipo Mustang (solo con las funcionalidades básicas)
+public class Mustang : IBasicCar
+{
+    public void Accelerate()
+    {
+        Console.WriteLine("Speeding up...");
+    }
 
-  brake() {
-    console.log("Stopping...");
-  }
+    public void Brake()
+    {
+        Console.WriteLine("Stopping...");
+    }
 
-  startEngine() {
-    console.log("Starting engine...");
-  }
+    public void StartEngine()
+    {
+        Console.WriteLine("Starting engine...");
+    }
 }
 
-class ModelS implements TeslaCar {
-  accelerate() {
-    console.log("Speeding up...");
-  }
+// Implementación de un coche tipo Tesla ModelS (con características adicionales)
+public class ModelS : ITeslaCar
+{
+    public void Accelerate()
+    {
+        Console.WriteLine("Speeding up...");
+    }
 
-  brake() {
-    console.log("Stopping...");
-  }
+    public void Brake()
+    {
+        Console.WriteLine("Stopping...");
+    }
 
-  startEngine() {
-    console.log("Starting engine...");
-  }
+    public void StartEngine()
+    {
+        Console.WriteLine("Starting engine...");
+    }
 
-  ludicrousSpeed() {
-    console.log("wooooooooow...");
-  }
+    public void LudicrousSpeed()
+    {
+        Console.WriteLine("wooooooooow...");
+    }
 
-  autoPilot() {
-    console.log("self driving...");
-  }
+    public void AutoPilot()
+    {
+        Console.WriteLine("Self driving...");
+    }
 }
