@@ -1,0 +1,10 @@
+interface BasicCar {
+  accelerate: () => void;
+  brake: () => void;
+  startEngine: () => void;
+}
+
+interface TeslaCar extends BasicCar {
+  autoPilot: () => void;
+  ludicrousSpeed: () => void;
+}
